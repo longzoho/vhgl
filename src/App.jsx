@@ -17,7 +17,26 @@ function App() {
           <Col xl={12}>
             <Row>
               <Col span={24}>
-                <Image src={"main-banner/title.png"} preview={false}/>
+                <div style={{
+                  width: '100%',
+                  maxWidth: '708px',
+                  padding: '60px 40px',
+                  color: 'white',
+                  fontFamily: 'Segoe UI, sans-serif'
+                }}>
+                  <div style={{ color: '#61B15A', fontSize: '28px', fontWeight: 'bold', marginBottom: '10px' }}>
+                    Vinhomes Green City
+                  </div>
+                  <div style={{ fontSize: '38px', fontWeight: 900, lineHeight: 1.4, textTransform: 'uppercase' }}>
+                    Khu đô thị<br/>
+                    “All-in-one”<br/>
+                    đầu tiên tại<br/>
+                    Tây Bắc TP.HCM
+                  </div>
+                  <div style={{ marginTop: '10px', fontSize: '32px', fontStyle: 'italic', color: '#d8a36a' }}>
+                    của Vinhomes
+                  </div>
+                </div>
               </Col>
               <Col span={24}>
                 <Paragraph>Xây dựng mô hình khu đô thị trên thị trường không hiếm, nhưng kiến tạo môi trường đáng sống
@@ -42,19 +61,47 @@ function App() {
           <Col xl={12} md={24}>
             <Row>
               <Col span={24}>
-                <Image src={"image.png"} preview={false}/>
+                <div style={{
+                  width: '100%',
+                  maxWidth: '567px',
+                  padding: '30px',
+                  fontFamily: 'Segoe UI, sans-serif',
+                  color: '#1f3f2b'
+                }}>
+                  <div style={{ fontSize: '32px', fontWeight: 'bold', color: '#3aa655', lineHeight: 1.4 }}>
+                    Chính thức ra mắt
+                    <span style={{
+                      fontFamily: 'Brush Script MT, cursive',
+                      fontStyle: 'italic',
+                      fontWeight: 'normal',
+                      fontSize: '36px',
+                      color: '#d8a36a',
+                      marginLeft: '10px'
+                    }}>
+                      The Lake Villas
+                    </span>
+                  </div>
+                  <div style={{
+                    marginTop: '20px',
+                    fontSize: '20px',
+                    color: '#12372A'
+                  }}>
+                    <span style={{ color: '#3aa655', fontWeight: 'bold' }}>“Tuyệt tác biệt thự”</span> giữa thiên nhiên và mặt hồ,
+                    tâm điểm của đại đô thị Vinhomes Green City.
+                  </div>
+                </div>
               </Col>
               <Col span={24}>
-                <Title level={4}>Những con số “biết nói” về bộ đôi tháp cao tầng đầu tiên tại Eco Retreat</Title>
+                <Title level={4}>Những con số “biết nói” về đại đô thị Vinhomes Green City</Title>
               </Col>
               <Col span={24}>
-                <InfoGrid/>
+                <InfoGrid />
               </Col>
               <Col span={24}>
-                <Title level={4}>Và PHỐ QUẢNG TRƯỜNG - 221 căn thấp tầng quanh khối đế Sky Retreat:</Title>
+                <Title level={4}>Phân khu The Lake Villas – ấn tượng với 517 căn biệt thự sinh thái ven hồ</Title>
               </Col>
               <Col span={24}>
-                <FeatureList/>
+                <FeatureList />
               </Col>
             </Row>
           </Col>

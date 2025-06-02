@@ -2,10 +2,10 @@ import React from 'react';
 import './FeatureList.css';
 
 const features = [
-  'Không gian thương mại, dịch vụ cho cư dân',
-  'Vị trí trung tâm của khu đô thị, "đường về nhà" của cư dân Sky Retreat',
-  'Trực diện quảng trường, vườn retreat, công viên tuyến tính',
-  'Loại hình sản phẩm: Shop Villa, Shophouse, Town Villa, Town House.'
+  'Biệt thự ven hồ, bao quanh bởi công viên xanh mát',
+  'Thiết kế sang trọng theo phong cách nghỉ dưỡng',
+  'Kế cận trung tâm tiện ích: trường học, bệnh viện, Vincom',
+  'Sản phẩm cao cấp: The Lake Villas, Garden Villa, Grand Villa'
 ];
 
 const FeatureList = () => {
@@ -21,4 +21,4 @@ const FeatureList = () => {
   );
 };
 
-export default FeatureList; 
+export default FeatureList;
