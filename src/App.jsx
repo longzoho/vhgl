@@ -7,13 +7,16 @@ import SectionContainer from './components/SectionContainer';
 import FeatureList from './components/FeatureList';
 import Image from './components/CustomImage';
 import Paragraph from './components/Paragraph';
+import FRow from "./components/FRow";
+import LeadFormSection from './components/LeadFormSection'; // Biểu mẫu đăng ký thông tin nhận bảng giá Vinhomes Green City
+import HighlightGrid from './components/HighlightGrid';
 
 
 function App() {
   return (
     <Layout>
       <SectionContainer backgroundColor={'#09261d'}>
-        <Row align={'middle'} justify={'center'}>
+        <FRow align={'middle'} justify={'center'}>
           <Col xl={12}>
             <Row>
               <Col span={24}>
@@ -51,10 +54,10 @@ function App() {
             <Image src={"main-banner/img.png"} preview={false}/>
           </Col>
 
-        </Row>
+        </FRow>
       </SectionContainer>
       <SectionContainer>
-        <Row gutter={16} align="middle" justify="center">
+        <FRow gutter={16} align="middle" justify="center">
           <Col xl={12} md={24}>
             <Banner/>
           </Col>
@@ -86,7 +89,8 @@ function App() {
                     fontSize: '20px',
                     color: '#12372A'
                   }}>
-                    <span style={{ color: '#3aa655', fontWeight: 'bold' }}>“Tuyệt tác biệt thự”</span> giữa thiên nhiên và mặt hồ,
+                    <span style={{ color: '#3aa655', fontWeight: 'bold' }}>“Tuyệt tác biệt thự”</span> giữa thiên nhiên
+                    và mặt hồ,
                     tâm điểm của đại đô thị Vinhomes Green City.
                   </div>
                 </div>
@@ -95,17 +99,25 @@ function App() {
                 <Title level={4}>Những con số “biết nói” về đại đô thị Vinhomes Green City</Title>
               </Col>
               <Col span={24}>
-                <InfoGrid />
+                <InfoGrid/>
               </Col>
               <Col span={24}>
                 <Title level={4}>Phân khu The Lake Villas – ấn tượng với 517 căn biệt thự sinh thái ven hồ</Title>
               </Col>
               <Col span={24}>
-                <FeatureList />
+                <FeatureList/>
               </Col>
             </Row>
           </Col>
-        </Row>
+        </FRow>
+      </SectionContainer>
+      <SectionContainer backgroundImage={'bg_ft_1603797835.png'}>
+        <LeadFormSection
+          title="Đăng ký nhận bảng giá"
+          subtitle="Nhận thông tin chính thức từ Vinhomes Green City"
+          description="Điền thông tin để được tư vấn chi tiết về giá bán, tiến độ và chính sách ưu đãi dự án Vinhomes Green City – khu đô thị 'all-in-one' đẳng cấp đầu tiên tại Tây Bắc TP.HCM. Số lượng giới hạn giai đoạn đầu!"
+        />
+        <HighlightGrid/>
       </SectionContainer>
     </Layout>
   );

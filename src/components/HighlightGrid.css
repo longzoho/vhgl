@@ -1,0 +1,51 @@
+.highlight-grid {
+    padding: 60px 20px;
+}
+
+.highlight-box {
+    border: 1px solid #3aa655;
+    border-radius: 8px;
+    overflow: hidden;
+    color: white;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.highlight-box:hover {
+    transform: translateY(-4px);
+}
+
+.highlight-img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 80px;
+}
+
+.highlight-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 70%, rgba(0, 0, 0, 0.1) 100%);
+}
+
+.highlight-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.highlight-emphasis {
+    display: block;
+    font-style: italic;
+    font-size: 18px;
+    color: #d8a36a;
+    margin-top: 4px;
+}
+
+.highlight-description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ddd;
+}
