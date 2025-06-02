@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/vhgl/static/css/main.ea45ecd1.css",
+    "main.js": "/vhgl/static/js/main.e33ac70b.js",
+    "static/js/453.e81acc83.chunk.js": "/vhgl/static/js/453.e81acc83.chunk.js",
+    "index.html": "/vhgl/index.html",
+    "main.ea45ecd1.css.map": "/vhgl/static/css/main.ea45ecd1.css.map",
+    "main.e33ac70b.js.map": "/vhgl/static/js/main.e33ac70b.js.map",
+    "453.e81acc83.chunk.js.map": "/vhgl/static/js/453.e81acc83.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ea45ecd1.css",
+    "static/js/main.e33ac70b.js"
+  ]
+}
