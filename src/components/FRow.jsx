@@ -14,13 +14,15 @@ const FRow = (props) => {
       { threshold: 0.5 }
     );
 
-    if (rowRef.current) {
-      observer.observe(rowRef.current);
+    const currentRowRef = rowRef.current;
+
+    if (currentRowRef) {
+      observer.observe(currentRowRef);
     }
 
     return () => {
-      if (rowRef.current) {
-        observer.unobserve(rowRef.current);
+      if (currentRowRef) {
+        observer.unobserve(currentRowRef);
       }
     };
   }, []);
