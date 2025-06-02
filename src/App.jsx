@@ -10,6 +10,7 @@ import Paragraph from './components/Paragraph';
 import FRow from "./components/FRow";
 import LeadFormSection from './components/LeadFormSection'; // Biểu mẫu đăng ký thông tin nhận bảng giá Vinhomes Green City
 import HighlightGrid from './components/HighlightGrid';
+import GreenCityRatioSection from './components/GreenCityRatioSection';
 
 
 function App() {
@@ -112,12 +113,25 @@ function App() {
         </FRow>
       </SectionContainer>
       <SectionContainer backgroundImage={'bg_ft_1603797835.png'}>
-        <LeadFormSection
-          title="Đăng ký nhận bảng giá"
-          subtitle="Nhận thông tin chính thức từ Vinhomes Green City"
-          description="Điền thông tin để được tư vấn chi tiết về giá bán, tiến độ và chính sách ưu đãi dự án Vinhomes Green City – khu đô thị 'all-in-one' đẳng cấp đầu tiên tại Tây Bắc TP.HCM. Số lượng giới hạn giai đoạn đầu!"
-        />
-        <HighlightGrid/>
+        <FRow>
+          <Col span={24}>
+            <LeadFormSection
+              title="Đăng ký nhận bảng giá"
+              subtitle="Nhận thông tin chính thức từ Vinhomes Green City"
+              description="Điền thông tin để được tư vấn chi tiết về giá bán, tiến độ và chính sách ưu đãi dự án Vinhomes Green City – khu đô thị 'all-in-one' đẳng cấp đầu tiên tại Tây Bắc TP.HCM. Số lượng giới hạn giai đoạn đầu!"
+            />
+          </Col>
+          <Col span={24}>
+            <HighlightGrid/>
+          </Col>
+        </FRow>
+      </SectionContainer>
+      <SectionContainer backgroundImage={'img.png'}>
+        <FRow>
+          <Col span={24}>
+            <GreenCityRatioSection/>
+          </Col>
+        </FRow>
       </SectionContainer>
     </Layout>
   );

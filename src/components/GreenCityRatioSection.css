@@ -1,0 +1,87 @@
+.green-city-overlay {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.green-city-title {
+    max-width: 600px;
+}
+
+.green-city-script {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 48px;
+    color: rgb(58, 166, 85);
+}
+
+.green-city-bold {
+    font-size: 42px;
+    font-weight: bold;
+    color: #ffe3c4;
+}
+
+.green-city-bold span {
+    color: #ffd6aa;
+}
+
+.green-city-sub {
+    font-size: 20px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.green-city-bar {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    width: 700px;
+}
+
+.bar-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.bar-label {
+    font-size: 18px;
+    font-weight: 600;
+    color: #eee;
+    margin-right: 10px;
+}
+
+.bar {
+    height: 28px;
+    border-radius: 14px;
+    align-items: center;
+    padding: 0 12px;
+    color: #000;
+    font-weight: bold;
+}
+
+.bar.green {
+    background: linear-gradient(90deg, #9be15d, #00e3ae);
+    color: #003b2f;
+    font-size: 16px;
+}
+
+.bar.orange {
+    background: linear-gradient(90deg, #ffe1a8, #f6a057);
+    font-size: 16px;
+}
+
+.bar.gray {
+    background: linear-gradient(90deg, #e2e2e2, #bdbdbd);
+    font-size: 16px;
+}
