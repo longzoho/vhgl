@@ -1,0 +1,19 @@
+.info-grid {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.info-item {
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+}
+
+.info-item strong {
+  color: #6abf40;
+  font-size: 18px;
+}
+
+.info-item sup {
+  font-size: 12px;
+} 

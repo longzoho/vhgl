@@ -1,0 +1,17 @@
+h1.ant-typography.ant-typography,
+h2.ant-typography.ant-typography,
+h3.ant-typography.ant-typography,
+h4.ant-typography.ant-typography,
+h5.ant-typography.ant-typography,
+h6.ant-typography.ant-typography {
+  color: #e39d6c;
+  font-weight: bold;
+}
+
+h2.ant-typography.ant-typography {
+  font-size: 24px;
+}
+
+h4.ant-typography.ant-typography {
+  font-size: 14pt;
+}
