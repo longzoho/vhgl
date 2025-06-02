@@ -1,6 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import { Button, Row, Col, Layout, Space } from 'antd';
+import { Row, Col, Layout } from 'antd';
 import Banner from './components/Banner';
 import InfoGrid from './components/InfoGrid';
 import Title from './components/Title';
