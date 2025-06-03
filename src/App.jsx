@@ -11,10 +11,20 @@ import HighlightGrid from './components/HighlightGrid';
 import GreenCityRatioSection from './components/GreenCityRatioSection';
 import ProjectOverview from './components/ProjectOverview';
 import TopMenu from './components/TopMenu';
+import FacilityShowcase from "./components/FacilityShowcase";
+
 function App() {
+  const topMenuItem = [
+    { 'anchorName': 'gioi-thieu', 'title': 'Giới thiệu' },
+    { 'anchorName': 'chinh-sach', 'title': 'Sản phẩm' },
+    { 'anchorName': 'thong-tin', 'title': 'Thông tin' },
+    { 'anchorName': 'quy-mo', 'title': 'Hạ tầng' },
+    { 'anchorName': 'tong-quan', 'title': 'Tổng quan' },
+    { 'anchorName': 'tien-ich', 'title': 'Tiện ích' },
+    { 'anchorName': 'dich-vu', 'title': 'Liên hệ' }]
   return (
-    <Layout>
-      <TopMenu />
+    <Layout >
+      <TopMenu menuItems={topMenuItem}/>
       <SectionContainer backgroundColor={'#09261d'} anchorName={'gioi-thieu'}>
         <FRow align={'middle'} justify={'center'}>
           <Col xl={12}>
@@ -43,7 +53,11 @@ function App() {
               </Col>
               <Col span={24}>
                 <Paragraph>
-                  Vinhomes Green City là khu đô thị tích hợp quy mô gần 200 ha do Tập đoàn Vingroup phát triển tại Hậu Nghĩa, Đức Hòa, Long An. Với mô hình “all-in-one” đầu tiên tại Tây Bắc TP.HCM, dự án mang đến môi trường sống hiện đại, xanh, tiện nghi với đầy đủ trung tâm thương mại, trường học, bệnh viện, công viên và hồ điều hòa. Đây là bước tiến mới trong việc kiến tạo đô thị sinh thái vệ tinh liền kề Sài Gòn.
+                  Vinhomes Green City là khu đô thị tích hợp quy mô gần 200 ha do Tập đoàn Vingroup phát triển tại Hậu
+                  Nghĩa, Đức Hòa, Long An. Với mô hình “all-in-one” đầu tiên tại Tây Bắc TP.HCM, dự án mang đến môi
+                  trường sống hiện đại, xanh, tiện nghi với đầy đủ trung tâm thương mại, trường học, bệnh viện, công
+                  viên và hồ điều hòa. Đây là bước tiến mới trong việc kiến tạo đô thị sinh thái vệ tinh liền kề Sài
+                  Gòn.
                 </Paragraph>
               </Col>
             </Row>
@@ -100,7 +114,7 @@ function App() {
           </Col>
         </FRow>
       </SectionContainer>
-      <SectionContainer backgroundImage={'bg_ft_1603797835.png'} anchorName={'tien-ich'}>
+      <SectionContainer backgroundImage={'bg_ft_1603797835.png'} anchorName={'thong-tin'}>
         <FRow>
           <Col span={24}>
             <LeadFormSection
@@ -121,7 +135,7 @@ function App() {
           </Col>
         </FRow>
       </SectionContainer>
-      <SectionContainer anchorName={'dich-vu'}>
+      <SectionContainer anchorName={'tong-quan'}>
         <FRow gutter={16} align="middle" justify="center">
           <Col xl={12} md={24}>
             <Banner/>
@@ -131,8 +145,14 @@ function App() {
           </Col>
         </FRow>
       </SectionContainer>
+      <SectionContainer anchorName={'tien-ich'} backgroundColor={'#09261d'}>
+        <FRow gutter={16} align="middle" justify="center">
+          <FacilityShowcase/>
+        </FRow>
+      </SectionContainer>
     </Layout>
-  );
+  )
+    ;
 }
 
 export default App;

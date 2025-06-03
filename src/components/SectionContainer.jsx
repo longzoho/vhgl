@@ -7,30 +7,30 @@ const { Content } = Layout;
 const SectionContainer = ({ children, backgroundColor, backgroundImage, anchorName }) => {
   const rowRef = useRef(null);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          rowRef.current.focus();
-        } else {
-          console.log('Element is not intersecting, focus will not be applied.');
-        }
-      },
-      { threshold: 0.5 }
-    );
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(
+  //     ([entry]) => {
+  //       if (entry.isIntersecting) {
+  //         rowRef.current.focus();
+  //       } else {
+  //         console.log('Element is not intersecting, focus will not be applied.');
+  //       }
+  //     },
+  //     { threshold: 0.1 }
+  //   );
 
-    const currentRowRef = rowRef.current;
-
-    if (currentRowRef) {
-      observer.observe(currentRowRef);
-    }
-
-    return () => {
-      if (currentRowRef) {
-        observer.unobserve(currentRowRef);
-      }
-    };
-  }, []);
+  //   const currentRowRef = rowRef.current;
+  //
+  //   if (currentRowRef) {
+  //     observer.observe(currentRowRef);
+  //   }
+  //
+  //   return () => {
+  //     if (currentRowRef) {
+  //       observer.unobserve(currentRowRef);
+  //     }
+  //   };
+  // }, []);
   const cssStyle = {}
   if (backgroundImage) {
     cssStyle.backgroundImage = `url(${backgroundImage})`;
