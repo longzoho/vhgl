@@ -16,4 +16,24 @@
 
 .info-item sup {
   font-size: 12px;
-} 
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-item {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.feature-icon {
+  color: #e39d6c;
+  margin-right: 8px;
+  margin-left: 24px;
+}

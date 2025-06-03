@@ -4,13 +4,13 @@ import Banner from './components/Banner';
 import InfoGrid from './components/InfoGrid';
 import Title from './components/Title';
 import SectionContainer from './components/SectionContainer';
-import FeatureList from './components/FeatureList';
 import Image from './components/CustomImage';
 import Paragraph from './components/Paragraph';
 import FRow from "./components/FRow";
 import LeadFormSection from './components/LeadFormSection'; // Biểu mẫu đăng ký thông tin nhận bảng giá Vinhomes Green City
 import HighlightGrid from './components/HighlightGrid';
 import GreenCityRatioSection from './components/GreenCityRatioSection';
+import ProjectOverview from './components/ProjectOverview';
 
 
 function App() {
@@ -97,16 +97,7 @@ function App() {
                 </div>
               </Col>
               <Col span={24}>
-                <Title level={4}>Những con số “biết nói” về đại đô thị Vinhomes Green City</Title>
-              </Col>
-              <Col span={24}>
                 <InfoGrid/>
-              </Col>
-              <Col span={24}>
-                <Title level={4}>Phân khu The Lake Villas – ấn tượng với 517 căn biệt thự sinh thái ven hồ</Title>
-              </Col>
-              <Col span={24}>
-                <FeatureList/>
               </Col>
             </Row>
           </Col>
@@ -130,6 +121,16 @@ function App() {
         <FRow>
           <Col span={24}>
             <GreenCityRatioSection/>
+          </Col>
+        </FRow>
+      </SectionContainer>
+      <SectionContainer>
+        <FRow gutter={16} align="middle" justify="center">
+          <Col xl={12} md={24}>
+            <Banner/>
+          </Col>
+          <Col xl={12} md={24}>
+            <ProjectOverview />
           </Col>
         </FRow>
       </SectionContainer>
