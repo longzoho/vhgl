@@ -1,5 +1,5 @@
 import './App.css';
-import { Row, Col, Layout } from 'antd';
+import { Layout, Row, Col } from 'antd';
 import Banner from './components/Banner';
 import InfoGrid from './components/InfoGrid';
 import SectionContainer from './components/SectionContainer';
@@ -10,12 +10,12 @@ import LeadFormSection from './components/LeadFormSection'; // Biểu mẫu đă
 import HighlightGrid from './components/HighlightGrid';
 import GreenCityRatioSection from './components/GreenCityRatioSection';
 import ProjectOverview from './components/ProjectOverview';
-
-
+import TopMenu from './components/TopMenu';
 function App() {
   return (
     <Layout>
-      <SectionContainer backgroundColor={'#09261d'}>
+      <TopMenu />
+      <SectionContainer backgroundColor={'#09261d'} anchorName={'gioi-thieu'}>
         <FRow align={'middle'} justify={'center'}>
           <Col xl={12}>
             <Row>
@@ -32,7 +32,7 @@ function App() {
                   </div>
                   <div style={{ fontSize: '38px', fontWeight: 900, lineHeight: 1.4, textTransform: 'uppercase' }}>
                     Khu đô thị<br/>
-                    “All-in-one”<br/>
+                    "All-in-one"<br/>
                     đầu tiên tại<br/>
                     Tây Bắc TP.HCM
                   </div>
@@ -56,7 +56,7 @@ function App() {
 
         </FRow>
       </SectionContainer>
-      <SectionContainer>
+      <SectionContainer anchorName={'chinh-sach'}>
         <FRow gutter={16} align="middle" justify="center">
           <Col xl={12} md={24}>
             <Banner/>
@@ -89,7 +89,7 @@ function App() {
                     fontSize: '20px',
                     color: '#12372A'
                   }}>
-                    <span style={{ color: '#3aa655', fontWeight: 'bold' }}>“Tuyệt tác biệt thự”</span> giữa thiên nhiên
+                    <span style={{ color: '#3aa655', fontWeight: 'bold' }}>"Tuyệt tác biệt thự"</span> giữa thiên nhiên
                     và mặt hồ,
                     tâm điểm của đại đô thị Vinhomes Green City.
                   </div>
@@ -102,7 +102,7 @@ function App() {
           </Col>
         </FRow>
       </SectionContainer>
-      <SectionContainer backgroundImage={'bg_ft_1603797835.png'}>
+      <SectionContainer backgroundImage={'bg_ft_1603797835.png'} anchorName={'tien-ich'}>
         <FRow>
           <Col span={24}>
             <LeadFormSection
@@ -116,20 +116,20 @@ function App() {
           </Col>
         </FRow>
       </SectionContainer>
-      <SectionContainer backgroundImage={'img.png'}>
+      <SectionContainer backgroundImage={'img.png'} anchorName={'quy-mo'}>
         <FRow>
           <Col span={24}>
             <GreenCityRatioSection/>
           </Col>
         </FRow>
       </SectionContainer>
-      <SectionContainer>
+      <SectionContainer anchorName={'dich-vu'}>
         <FRow gutter={16} align="middle" justify="center">
           <Col xl={12} md={24}>
             <Banner/>
           </Col>
           <Col xl={12} md={24}>
-            <ProjectOverview />
+            <ProjectOverview/>
           </Col>
         </FRow>
       </SectionContainer>

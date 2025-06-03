@@ -4,7 +4,7 @@ import './SectionContainer.css';
 
 const { Content } = Layout;
 
-const SectionContainer = ({ children, backgroundColor, backgroundImage }) => {
+const SectionContainer = ({ children, backgroundColor, backgroundImage, anchorName }) => {
   const cssStyle = {}
   if (backgroundImage) {
     cssStyle.backgroundImage = `url(${backgroundImage})`;
@@ -14,7 +14,7 @@ const SectionContainer = ({ children, backgroundColor, backgroundImage }) => {
     cssStyle.backgroundColor = backgroundColor;
   }
   return (
-    <section className="section-container" style={cssStyle}>
+    <section className="section-container" style={cssStyle} id={anchorName}>
       <Content className='section-content'>
         {children}
       </Content>
