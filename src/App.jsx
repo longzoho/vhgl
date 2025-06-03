@@ -31,21 +31,19 @@ function App() {
                     Vinhomes Green City
                   </div>
                   <div style={{ fontSize: '38px', fontWeight: 900, lineHeight: 1.4, textTransform: 'uppercase' }}>
-                    Khu đô thị<br/>
-                    "All-in-one"<br/>
-                    đầu tiên tại<br/>
+                    Đại đô thị xanh<br/>
+                    “All-in-one”<br/>
+                    tại trung tâm<br/>
                     Tây Bắc TP.HCM
                   </div>
                   <div style={{ marginTop: '10px', fontSize: '32px', fontStyle: 'italic', color: '#d8a36a' }}>
-                    của Vinhomes
+                    do Vingroup phát triển
                   </div>
                 </div>
               </Col>
               <Col span={24}>
-                <Paragraph>Xây dựng mô hình khu đô thị trên thị trường không hiếm, nhưng kiến tạo môi trường đáng sống
-                  đúng nghĩa, mang đến những giá trị đích thực thì không phải dự án nào cũng làm được.
-                  Những khu đô thị xanh của Nhà sáng lập Ecopark là ngoại lệ - nơi mọi chủ nhân đều tự hào về quyết định
-                  sở hữu và đầu tư của mình.
+                <Paragraph>
+                  Vinhomes Green City là khu đô thị tích hợp quy mô gần 200 ha do Tập đoàn Vingroup phát triển tại Hậu Nghĩa, Đức Hòa, Long An. Với mô hình “all-in-one” đầu tiên tại Tây Bắc TP.HCM, dự án mang đến môi trường sống hiện đại, xanh, tiện nghi với đầy đủ trung tâm thương mại, trường học, bệnh viện, công viên và hồ điều hòa. Đây là bước tiến mới trong việc kiến tạo đô thị sinh thái vệ tinh liền kề Sài Gòn.
                 </Paragraph>
               </Col>
             </Row>

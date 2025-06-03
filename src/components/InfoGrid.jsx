@@ -5,40 +5,40 @@ import Title from "./Title";
 
 const InfoGrid = () => {
   const features = [
-    'Biệt thự ven hồ, bao quanh bởi công viên xanh mát',
-    'Thiết kế sang trọng theo phong cách nghỉ dưỡng',
-    'Kế cận trung tâm tiện ích: trường học, bệnh viện, Vincom',
-    'Sản phẩm cao cấp: The Lake Villas, Garden Villa, Grand Villa'
+    'Trung tâm thương mại Vincom Mega Mall rộng ~9,6ha',
+    'Hệ thống trường học liên cấp Vinschool ngay trong khu',
+    'Bệnh viện đa khoa quốc tế Vinmec hiện đại, phục vụ nội khu',
+    'Công viên trung tâm và hồ điều hòa rộng tổng cộng 35,8ha'
   ];
 
   return (
     <div className="info-grid">
       <Col span={24}>
-        <Title level={4}>Những con số “biết nói” về đại đô thị Vinhomes Green City</Title>
+        <Title level={4}>Các thông số nổi bật tại Vinhomes Green City</Title>
       </Col>
       <Row gutter={[16, 16]}>
         <Col span={8} className="info-item">
-          <p><strong>18</strong> thang máy tốc độ cao (3m/s)</p>
+          <p><strong>197,2 ha</strong> tổng diện tích toàn khu</p>
         </Col>
         <Col span={8} className="info-item">
-          <p><strong>33.500m<sup>2</sup></strong> hầm (có sky lounge)</p>
+          <p><strong>~5.000</strong> sản phẩm nhà ở đa dạng</p>
         </Col>
         <Col span={8} className="info-item">
-          <p><strong>2.222</strong> chỗ đỗ xe</p>
+          <p><strong>40.000</strong> cư dân dự kiến</p>
         </Col>
       </Row>
       <Row gutter={[16, 16]}>
         <Col span={8} className="info-item">
-          <p><strong>100%</strong> căn hộ vuông vức</p>
+          <p><strong>~25%</strong> mật độ xây dựng</p>
         </Col>
         <Col span={8} className="info-item">
-          <p><strong>100%</strong> cửa kính không có hướng chính Tây</p>
+          <p><strong>20 ha</strong> hồ điều hòa trung tâm</p>
         </Col>
         <Col span={8} className="info-item">
-          <p><strong>100%</strong> của kính hướng Tây Bắc là kính Low-E</p>
+          <p><strong>12</strong> công viên sinh thái chủ đề</p>
         </Col>
         <Col span={24}>
-          <Title level={4}>Phân khu The Lake Villas – ấn tượng với 517 căn biệt thự sinh thái ven hồ</Title>
+          <Title level={4}>Tiện ích nổi bật trong nội khu Vinhomes Green City</Title>
         </Col>
         <Col span={24}>
           <ul className="feature-list">
