@@ -2,7 +2,6 @@ import './App.css';
 import { Row, Col, Layout } from 'antd';
 import Banner from './components/Banner';
 import InfoGrid from './components/InfoGrid';
-import Title from './components/Title';
 import SectionContainer from './components/SectionContainer';
 import Image from './components/CustomImage';
 import Paragraph from './components/Paragraph';
