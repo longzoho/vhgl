@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { Header } from "antd/es/layout/layout";
 
 const TopMenu = ({ menuItems }) => {
@@ -15,7 +15,7 @@ const TopMenu = ({ menuItems }) => {
     }
   };
 
-  const handleScrollSpy = () => {
+  const handleScrollSpy = useCallback(() => {
     const sections = menuItems.map(item => `#${item.anchorName}`);
     const scrollPosition = window.scrollY + window.innerHeight / 2;
 
@@ -26,14 +26,14 @@ const TopMenu = ({ menuItems }) => {
         break;
       }
     }
-  };
+  }, [menuItems]);
 
   useEffect(() => {
     window.addEventListener('scroll', handleScrollSpy);
     return () => {
       window.removeEventListener('scroll', handleScrollSpy);
     };
-  }, [menuItems]);
+  }, [handleScrollSpy]);
 
   return (
     <Header className="top-menu">
